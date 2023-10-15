@@ -1,5 +1,5 @@
 
-<html>
+<html lang="eu">
     <head>
         <title> Калькулятор</title>
     </head>
