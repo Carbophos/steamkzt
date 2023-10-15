@@ -11,14 +11,17 @@
 
 </form>
     <?php
-    //if($_POST['game']) { $game = strip_tags($_POST['game'] ); }
+    $q = 0.2102 . "p"; //курс рубля за 1 тенге
+    echo "Курс за 1 тенге: ". $q . "<br/>";
     if(isset($_POST['send']))
     {
             if(isset($_POST['game']))
             {
                 $game = $_POST['game'];
                 $result = (($game / 100) * 9) + $game;
-                echo "Итог сколько нужно положить: ".$result. "₸";
+                echo "Итог сколько нужно положить: ".$result. " ₸ <br/>";
+                $result *= $q; //
+                echo "Конечная цена: ". round($result, 3) . "p";
             }
     }
     $q = 0.2102;
