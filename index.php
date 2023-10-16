@@ -19,7 +19,6 @@
             {
                 $game = $_POST['game'];
                 $result = (($game / 100) * 9) + $game;
-                $result = (($game / 100) * 9) + $game;
                 echo "Итог сколько нужно положить: ".$result. " ₸ <br/>";
                 $q = 0.2102;
                 $result *= $q; //
